@@ -6,7 +6,7 @@ const contacts = [
   {
     name: "Mickey",
     avatar: "https://www.new-discount.com/8292-large_default/coussin-mickey-disney-forme.jpg",
-    online: "true"
+    online: "false"
   },
 
   {
@@ -18,7 +18,7 @@ const contacts = [
   {
     name: "Wonder Woman",
     avatar: "http://s1.lprs1.fr/images/2017/07/24/7153494_mv5bmme2m2i4mwytm2nioc00ogm0ltllnwqtzdhlmjnlnjg5nzuwxkeyxkfqcgdeqxvynjczmdc2ndq-v1-uy666-ux666-al_940x500.jpg",
-    online: "false"
+    online: "true"
   },
 
   {
