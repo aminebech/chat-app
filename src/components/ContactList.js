@@ -36,13 +36,12 @@ const contacts = [
 
 const ContactList = () => (
   <div>
-    {contacts.map((contact, index) => {
+    {contacts.map((contact) => {
       return (
         <Contact
           name={contact.name}
           avatar={contact.avatar}
           online={contact.online}
-          key={index}
         />
       );
     })}
