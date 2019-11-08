@@ -6,7 +6,7 @@ class Contact extends React.Component {
     constructor(props) {
       super(props);
       this.state = {
-        online: false,
+        status : this.props.status,
       };
     }
     render () {
@@ -17,12 +17,15 @@ class Contact extends React.Component {
                 <div className="name">{this.props.name}</div>
                 <div className="status">
                     <div className="status-text">
-                        <div  className={this.state.online ? 'online' : 'offline'}
+                        <div  className={this.state.status  ? 'status-online' : 'status-offline'}
                 onClick={event => {
-                const Offline = !this.state.online;
-                this.setState({ online: Offline });
-              }}></div>
-                            {this.props.online === "true" ? "Online" : "Offline"}
+                    const Offline = !this.state.status;
+                    this.setState({ status: Offline });
+
+              }}
+               > </div>
+               <span>{this.state.status ? 'Online' : 'Offline'} </span>
+
                     </div>
                 </div>
             </div>
